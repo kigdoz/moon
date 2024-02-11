@@ -490,7 +490,6 @@ headers["vary"] = randomHeaders['vary'];
 headers["x-requested-with"] = "XMLHttpRequest";
 headers["CF-IPCountry"] = countrys;
 headers["cf-cache-status"] = "HIT";
-headers["
 headers["cdn-loop"] = "cloudflare";
 headers["TE"] = trailers;
 headers["set-cookie"] = CookieCf;
@@ -543,7 +542,7 @@ headers["Referer"] = randomReferer;
          connection.setKeepAlive(true, 100000);
 
          const tlsOptions = {
-            ALPNProtocols: ['h2''http/1.1'],
+            ALPNProtocols: ['h2','http/1.1'],
             challengesToSolve: Infinity,
             resolveWithFullResponse: true,
             followAllRedirects: true,
