@@ -233,13 +233,14 @@ language_header = [
   ' en-GB,en;q=0.7',
   'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
 ],
-const tips1 =[
+ tips1 =[
  "use premium proxy will get more request/s",
  "this script only work on http/2 http/3 http1/1",
  "recommended big proxyfile if target is akamai/fastly",
  "I remember it was patched",
  "GET & POST methods"
 ];
+ var tipsz = tips1[Math.floor(Math.floor(Math.random() * tips1.length))];
 methods = [
    "GET",
    "POST"
