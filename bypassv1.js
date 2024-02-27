@@ -801,7 +801,7 @@ console.log(`Time: `+ process.argv[3])
 console.log(`Rate: `+ process.argv[4])
 console.log(`Thread:` + process.argv[5])
 console.log(`Methods: BYPASSv1`)
-console.log(`Methods DDoS By Lintar`
+console.log(`Methods DDoS By Lintar`)
 console.log(`------------------------------------------`)
 
  process.on('uncaughtException', error => {});
